@@ -282,7 +282,7 @@ export default function Home() {
           <div className=""></div>
           <div className=""></div>
           {items.map((d) => (
-            <div className="relative">
+            <div key={d.id} className="relative">
               <div className="absolute bottom-4 left-4">
                 <h2 className="text-2xl font-bold text-white py-2">
                   {d.title}
@@ -291,13 +291,13 @@ export default function Home() {
                   <Gift /> 10 Packages
                 </div>
               </div>
-              <img src={d.img} className="h-full w-full object-cover" />
+              <img src={d.img} className="h-full w-full object-cover" alt="picture"/>
             </div>
           ))}
           <div className="flex justify-center items-center p-8 row-span-2 bg-gradient-to-r from-orange-500 to-yellow-500">
             <div className="grid gap-10">
               <span className="text-white">
-                Wanna travel to the most thrilling spot on the planet? We've set
+                Wanna travel to the most thrilling spot on the planet ? We&apos;ve set
                 a bunch of surprises for you.
               </span>
               <span className="flex justify-between items-center text-white">
@@ -319,8 +319,8 @@ export default function Home() {
               <h2 className="text-2xl">Share a trip to</h2>
               <h2 className="text-primary text-4xl font-bold py-2">Dubai</h2>
               <p className="text-sm">
-                Dubai, a city with many faces, is one of the world's most
-                popular tourist destinations. The Burj Khalifa, the world's
+                Dubai, a city with many faces, is one of the world&apos;s most
+                popular tourist destinations.The Burj Khalifa, the world&apos;s
                 highest tower, is located here. The futuristic beauty of new
                 buildings is at the heart of Dubai tourism.
               </p>
@@ -340,7 +340,7 @@ export default function Home() {
           <div className="row-span-3"></div>
 
           {items.map((d) => (
-            <div className="relative">
+            <div key={d.id} className="relative">
               <div className="absolute bottom-4 left-4">
                 <h2 className="text-2xl font-bold text-white py-2">
                   {d.title}
@@ -349,13 +349,13 @@ export default function Home() {
                   <Gift /> 10 Packages
                 </div>
               </div>
-              <img src={d.img} className="w-full h-full object-cover" />
+              <img src={d.img} className="w-full h-full object-cover" alt="picture"/>
             </div>
           ))}
           <div className="flex justify-center items-center p-8 row-span-2 bg-gradient-to-r from-orange-500 to-yellow-500">
             <div className="grid gap-10">
               <span className="text-white">
-                Wanna travel to the most thrilling spot on the planet? We've set
+                Wanna travel to the most thrilling spot on the planet? We have set
                 a bunch of surprises for you.
               </span>
               <span className="flex justify-between items-center text-white">
